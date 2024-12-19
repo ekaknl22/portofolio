@@ -1,0 +1,199 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav > a{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.home-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profil-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profil{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+.profil p{
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.content-header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-container{
+    display: flex;
+    gap: 24px;
+}
+
+.main-item{
+    flex: 1;
+}
+
+.form{
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    
+}
+
+input{
+    padding: 11px 22px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+#option{
+    padding: 11px 22px;
+    background-color: white;
+    width: 205px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+input[type=submit]{
+    background-color: #1B1833;
+    color: white;
+    border-radius: 5px;
+    width: 205px;
+    border: #1B1833;
+}
+
+#error-name, #error-email, #error-option{
+    color: red;
+}
+
+.our-packages-header{
+    background-color: aliceblue;
+    margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.destination-option{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 30px 30px;
+}
+
+.destination-option > div {
+    padding: 20px; 
+    border: 1px solid lightgray; 
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9;
+}
+
+.call-action{
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.footer-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer div p {
+    margin: 5px 0; 
+}
+
+footer{
+    margin-top: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .destination-option {
+        grid-template-columns: 1fr; 
+    }
+
+    .footer-icon {
+        margin: 0 auto;
+    }
+
+    input, select, input[type="submit"] {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .content-header h1, .content-header h3, .destination-option h4 {
+        font-size: 1em; 
+    }
+
+    .main-header {
+        padding: 5px;
+    }
+}

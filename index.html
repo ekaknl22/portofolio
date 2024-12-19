@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project RevoU</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="home-icon"></div>
+        <nav>
+            <a href="#main-container">Home</a>
+            <a href="#our-packages-section">Our Package</a>
+            <a href="#call-action">Call us</a>
+        </nav>
+    </header>
+
+    <hr color="lightgrey" size="1">
+    <main>
+        
+        <header class="content-header">
+            <h1>Your Trusted Travel Agent</h1><br>
+            <h3>Your Happiness is Our Happiness</h3>
+        </header>
+
+        <!-- Home Content -->
+        <section class="main-container" id="main-container">
+            <!-- Banner AutoSlide Konten -->
+            <aside class="main-item">
+                <div class="banner-img-container">
+                    <img class="img-slideshow" src="https://picsum.photos/800/300?random=1" alt="Slide 1">
+                    <img class="img-slideshow" src="https://picsum.photos/800/300?random=2" alt="Slide 2">
+                    <img class="img-slideshow" src="https://picsum.photos/800/300?random=3" alt="Slide 3">
+                </div>
+                <p><i><center>"Liburanku jadi menyenangkan bersama Travel Agentku"</center></i></p>
+                <div class="profil">
+                    <div class="profil-icon"></div>
+                    <p>Dini Arianti</p>
+                    <p><i>Pengusaha, 20</i></p>
+                    <p>Destinasi Wisata Unggulan</p>
+                    <p>1. Temukan destinasi wisata terbaik yang dipilih khusus untuk Anda, lengkap dengan panduan dan aktivitas seru di setiap lokasi.</p>
+                    <p>2. Paket Liburan Terjangkau. Dapatkan penawaran paket liburan dengan harga terbaik, termasuk tiket, akomodasi, dan itinerary yang sudah dirancang untuk kenyamanan Anda.</p>
+                    <p>3. Layanan Pelanggan 24/7. Nikmati layanan bantuan pelanggan kapan saja, sehingga perjalanan Anda bebas dari kendala dan lebih menyenangkan.</p></p>   
+                </div>
+            </aside>
+
+            <!-- Form Contact Us -->
+            <form class="main-item form" name="form" onsubmit="return validateForm()" action="php/save_contact.php" method="POST">
+                <h3>Contact Us</h3>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p><br>
+
+                <label for="name">Your name:</label><br>
+                <input type="text" name="name" id="name" placeholder="First and last name" required><br>
+                <p id="error-name"></p>
+                <label for="email">Email address:</label><br>
+                <input type="email" placeholder="example@email.com" id="email" name="email" required><br>
+                <p id="error-email"></p>
+                <label for="option">What are you interested in?</label><br>
+                <select id="option" name="interest">
+                    <option value="" disabled selected hidden>Select Option</option>
+                    <option value="belanja">Belanja</option>
+                    <option value="fotografi">Fotografi</option>
+                    <option value="hiking">Hiking/Trekking</option>
+                    <option value="wisata_kuliner">Wisata Kuliner</option>
+                </select>
+                <p id="error-option"></p>
+                <br><br>
+                <input type="submit" id="submit" value="Send" href="php/save_contact.php">
+            </form>
+        </section>
+
+        <!-- Our Package Content -->
+         <section id="our-packages-section">
+            <header class="content-header our-packages-header">
+                <h1>Our Packages</h1>
+            </header>
+         </section>
+
+        <!-- Destination Option Content -->
+        <div class="destination-option">
+            <div>
+                <h4>Bali</h4>
+                <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+            <div>
+                <h4>Japan</h4>
+                <p>Travel dan wisata di Japan, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+            <div>
+                <h4>Bangka</h4>
+                <p>Travel dan wisata di Bangka, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+            <div>
+                <h4>Singapore</h4>
+                <p>Travel dan wisata di Singapore, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+            <div>
+                <h4>Bandung</h4>
+                <p>Travel dan wisata di Bandung, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+            <div>
+                <h4>Yogyakarta</h4>
+                <p>Travel dan wisata di Yogyakarta, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+        </div>
+        <hr color="lightgrey" size="1">
+
+        <div class="call-action" id="call-action">
+            <h2>Your Next Adventure Starts Here - Let Us Make It Unforgettable!</h2>
+            <p>Discover new destinations, create lasting memories, and enjoy a seamless travel experience with us. Your journey, our passion.</p><br>
+            <input type="submit" value="Call to Action">
+        </div>
+        <hr color="lightgrey" size="1">
+    </main>
+
+    <footer>
+        <div class="footer-icon"></div>
+        <div>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>&copy 2024</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
